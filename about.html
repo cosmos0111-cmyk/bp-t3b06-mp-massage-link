@@ -1,147 +1,336 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>예약센터 스토리 &amp; 100% 리얼 고객 체험기 | 마포 마사지 링크</title>
-  <meta name="description" content="마포 마사지 안심 예약센터가 만들어진 솔직한 배경스토리와 공덕/마포 바닥에서 힐링 극대화한 브로들의 생생한 리뷰!">
-  <meta name="keywords" content="마포 마사지 링크, 마포 마사지 후기, 공덕 마사지 추천">
-  <meta name="bpaas-design-system" content="premium-minimal">
-  <meta name="bpaas-design-theme" content="midnight-orchid">
-  <link rel="canonical" href="https://t3b06-mp-massage-link.pages.dev/about.html">
-  <style>
-    :root {
-      --bg-color: #120b1e;
-      --bg-card: #201235;
-      --accent: #c084fc;
-      --text: #f3e8ff;
-      --text-muted: #c084fc;
-      --border: rgba(255, 255, 255, 0.05);
-      --font-stack: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
-    }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      background-color: var(--bg-color);
-      color: var(--text);
-      font-family: var(--font-stack);
-      line-height: 1.8;
-      padding: 0 24px;
-    }
-    .wrapper {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 80px 0;
-    }
-    header {
-      border-bottom: 1px solid var(--border);
-      padding-bottom: 30px;
-      margin-bottom: 60px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .brand {
-      font-size: 1.6rem;
-      font-weight: 900;
-      color: #fff;
-      text-decoration: none;
-    }
-    nav { display: flex; gap: 28px; }
-    nav a {
-      color: var(--text-muted);
-      text-decoration: none;
-      font-weight: 700;
-    }
-    nav a:hover { color: #fff; }
-    main { padding-bottom: 60px; }
-    h2 { font-size: 2.2rem; font-weight: 900; color: #fff; margin-bottom: 28px; }
-    .about-desc { font-size: 1.1rem; color: var(--text); margin-bottom: 40px; }
-    .about-desc p { margin-bottom: 20px; }
-    .reviews-section { margin-top: 60px; }
-    .review-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      padding: 30px;
-      border-radius: 14px;
-      margin-bottom: 24px;
-    }
-    .review-header {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 14px;
-      font-size: 0.9rem;
-      font-weight: 800;
-    }
-    .reviewer-stars { color: #fbbf24; }
-    .review-content { font-size: 1rem; color: #f3e8ff; }
-    footer {
-      border-top: 1px solid var(--border);
-      padding-top: 50px;
-      margin-top: 100px;
-      text-align: center;
-      font-size: 0.95rem;
-      color: #c084fc;
-    }
-    footer a { color: #c084fc; text-decoration: none; margin: 0 14px; font-weight: 700; }
-    footer a:hover { color: var(--accent); }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-neon-void">
+    <meta name="description" content="마포에서 제대로 된 마사지 정보 원한다면? 마사지 종류, 가격대, 후기, 예약 꿀팁까지 – 마포 마사지 링크가 다 모아줬다. 진짜 정보는 여기! 전화 010-6279-0862">
+    <meta name="keywords" content="마포 마사지, 마포 마사지 링크, 마사지 마포, 마포 스웨디시, 마포 건마, 마사지 추천, 마사지 정보">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://t3b06-mp-massage-link.vercel.app/info">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://t3b06-mp-massage-link.vercel.app/info">
+    <meta property="og:title" content="마포 마사지 링크 – 정보">
+    <meta property="og:description" content="마사지 고민 끝! 종류부터 가격, 진짜 후기까지 다 정리해놨다.">
+    <meta property="og:image" content="https://t3b06-mp-massage-link.vercel.app/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>마포 마사지 링크 – 정보</title>
+    <style>
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            font-size: 16px;
+            scroll-behavior: smooth;
+        }
+        body {
+            background-color: #0b0c10;
+            color: #f0f0f0;
+            font-family: 'Arial Black', 'Impact', 'Helvetica Neue', sans-serif;
+            line-height: 1.4;
+            padding: 0 20px;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 0.5rem;
+            color: #fffe;
+        }
+        h1 {
+            font-size: 3.5rem;
+            line-height: 1;
+            text-shadow: 4px 4px 0 #ff0088, -2px -2px 0 #00ffff;
+            word-break: break-word;
+        }
+        h2 {
+            font-size: 2.5rem;
+            border-left: 8px solid #ff0088;
+            padding-left: 20px;
+            margin-top: 2rem;
+        }
+        h3 {
+            font-size: 1.8rem;
+        }
+        p {
+            font-family: 'Courier New', monospace;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+            color: #ccc;
+        }
+        a {
+            color: #00ffff;
+            text-decoration: underline;
+            text-underline-offset: 5px;
+            transition: all 0.2s;
+        }
+        a:hover, a:focus {
+            color: #ff0088;
+            text-decoration: none;
+            background: rgba(255, 0, 136, 0.2);
+        }
+        .brutal-border {
+            border: 4px solid #fffe;
+            padding: 20px;
+            box-shadow: 8px 8px 0 #ff0088;
+            background: #12131a;
+        }
+        .strong-box {
+            background: #1a1c24;
+            border: 3px solid #00ffff;
+            padding: 30px;
+            margin: 20px 0;
+            box-shadow: 6px 6px 0 rgba(0, 255, 255, 0.3);
+        }
+        .skew-block {
+            transform: skewX(-5deg);
+            background: #ff0088;
+            color: #0b0c10;
+            padding: 15px 30px;
+            display: inline-block;
+            font-weight: 900;
+            text-transform: uppercase;
+            margin: 10px 0;
+        }
+        .skew-block > * {
+            transform: skewX(5deg);
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            border-bottom: 4px solid #ff0088;
+            position: relative;
+        }
+        .logo {
+            font-size: 2rem;
+            font-weight: 900;
+            color: #fff;
+            text-decoration: none;
+            text-shadow: 3px 3px 0 #00ffff;
+        }
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
+        .nav-links a {
+            font-size: 1.2rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #f0f0f0;
+            text-decoration: none;
+            padding: 8px 16px;
+            border: 2px solid transparent;
+            transition: all 0.2s;
+        }
+        .nav-links a:hover {
+            border-color: #ff0088;
+            background: rgba(255, 0, 136, 0.15);
+        }
+        .hamburger-menu {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 10px;
+        }
+        .hamburger-menu span {
+            width: 30px;
+            height: 4px;
+            background: #fff;
+            transition: all 0.3s;
+        }
+        .hero {
+            margin: 40px 0;
+            text-align: center;
+        }
+        .hero p {
+            font-size: 1.4rem;
+            max-width: 700px;
+            margin: 20px auto;
+        }
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        .info-card {
+            background: #1a1c24;
+            border: 3px solid #f0f0f0;
+            padding: 25px;
+            box-shadow: 6px 6px 0 #ff0088;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .info-card:hover {
+            transform: translate(-3px, -3px);
+            box-shadow: 9px 9px 0 #ff0088;
+        }
+        .info-card h3 {
+            color: #00ffff;
+            margin-bottom: 10px;
+        }
+        .info-card p {
+            margin-bottom: 0;
+        }
+        .faq-item {
+            margin-bottom: 20px;
+            padding: 20px;
+            background: #12131a;
+            border-left: 6px solid #ff0088;
+        }
+        .faq-item h4 {
+            font-size: 1.4rem;
+            color: #fffe;
+            margin-bottom: 8px;
+        }
+        footer {
+            border-top: 4px solid #ff0088;
+            padding: 30px 0;
+            margin-top: 60px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        footer .tel-link {
+            font-size: 2rem;
+            font-weight: 900;
+            color: #00ffff;
+            text-decoration: none;
+            border: 3px solid #ff0088;
+            padding: 10px 30px;
+            display: inline-block;
+            transition: all 0.2s;
+        }
+        footer .tel-link:hover {
+            background: #ff0088;
+            color: #0b0c10;
+        }
+        @media (max-width: 768px) {
+            body {
+                padding: 0 10px;
+            }
+            h1 {
+                font-size: 2.2rem;
+            }
+            h2 {
+                font-size: 1.8rem;
+            }
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: #0b0c10;
+                border: 3px solid #ff0088;
+                padding: 20px;
+                z-index: 100;
+            }
+            .nav-links.active {
+                display: flex;
+            }
+            .hamburger-menu {
+                display: flex;
+            }
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+            .skew-block {
+                transform: none;
+            }
+            .skew-block > * {
+                transform: none;
+            }
+            footer {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+        }
+    </style>
 </head>
 <body>
-  <div class="wrapper">
-    <header>
-      <a href="index.html" class="brand">🔮 마포 안심 케어</a>
-      <nav>
-        <a href="index.html">홈</a>
-        <a href="about.html">소개</a>
-        <a href="blog.html">블로그</a>
-      </nav>
-    </header>
-    <main>
-      <h2>피로 극복 핫라인 출범 스토리</h2>
-      <div class="about-desc">
-        <p>어이 반갑다 브로! 마포와 공덕역 중심의 바쁜 오피스 상권에서 불철주야 개고생하면서 몸이 천근만근 무거워진 직장인 동생들을 위해 1급수 마사지 안심 라인을 깔아준 대장 형이다. 요즘 가짜 마사지 어플이나 블로그 찌라시 정보가 지나치게 흘러넘치고 예약 선금 낚시 마찰까지 성행하여 브로들이 이중 삼중으로 피해를 입는 걸 목격했다. 더 이상 소중한 밤과 피로 회복 에너지를 그런 개허접한 마찰에 소모하지 말았으면 해서 이 가이드를 개척했다 브로.</p>
-        <p>우리는 마포구 최고의 전용 테라피 샵들과 100% 정찰 요금 보장 계약을 체결했다 브로. 형이 제안하는 힐링 구역들은 엄격한 고온 스팀 타올 살균 공정, 천연 프리미엄 아로마 오일 성분 검증, 전문 수압 도파민 마사지사 관리 수준이 완벽히 조율되어 있다. 더 이상 퇴폐 낚시꾼들과 마찰 일으키지 말고 형이 구축해 둔 클린 연동 핫라인으로 몸도 맘도 편안하게 해방되자 브로!</p>
-      </div>
+    <div class="container">
+        <header>
+            <nav>
+                <a href="/" class="logo">링크 마사지</a>
+                <button class="hamburger-menu" aria-label="메뉴 열기" onclick="this.nextElementSibling.classList.toggle('active')">
+                    <span></span><span></span><span></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="/">홈</a></li>
+                    <li><a href="/info">정보</a></li>
+                    <li><a href="/review">후기</a></li>
+                    <li><a href="/map">지도</a></li>
+                    <li><a href="tel:010-6279-0862">전화</a></li>
+                </ul>
+            </nav>
+        </header>
 
-      <div class="reviews-section">
-        <h2>체험 브로들의 100% 생생 UGC 후기</h2>
-        
-        <div class="review-card">
-          <div class="review-header">
-            <span class="reviewer-stars">★★★★★</span>
-            <span class="reviewer-name">공덕야근러 브로</span>
-            <span class="review-date">2026.05.25</span>
-          </div>
-          <p class="review-content">매일 12시간씩 앉아서 코딩하느라 목 디스크 걸리기 직전이었는데 형이 알려준 마사지 스팟에서 목이랑 어깨 지대하게 털어줌. 관리사님 압이 엄청나서 피로 마찰 요소가 완전히 가루가 됨 브로! 재방문 500% 예약이다.</p>
-        </div>
+        <section class="hero">
+            <h1>마사지, 진짜 정보는 여기</h1>
+            <p>마포에서 마사지 받을 때 꼭 알아야 할 꿀팁 모음.<br>내가 직접 발로 뛰어서 정리했어. 형들만 믿어.</p>
+            <div class="skew-block"><span>#마사지꿀팁 #마포마사지링크</span></div>
+        </section>
 
-        <div class="review-card">
-          <div class="review-header">
-            <span class="reviewer-stars">★★★★★</span>
-            <span class="reviewer-name">오피스킹 브로</span>
-            <span class="review-date">2026.05.18</span>
-          </div>
-          <p class="review-content">샤워실 위생이 너무 쾌적해서 맘에 쏙 들었음. 가끔 지저분한 곳 가면 샤워할 때 물때 냄새 마찰 오지는데 여기는 대리석 청소 상태가 거의 오성급 호텔 수준 브로! 아로마 향도 엄청 향긋함.</p>
-        </div>
+        <section>
+            <h2>마포에서 인기 많은 마사지 종류</h2>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>스웨디시 마사지</h3>
+                    <p>전신 근육 풀어주는 기본기. 오일 쓰고 부드럽게 해주는데, 마포에서는 홍대 쪽 샵들이 실력 좋아. 피로 쌓였을 때 딱이야.</p>
+                </div>
+                <div class="info-card">
+                    <h3>타이 마사지</h3>
+                    <p>옷 입고 하는 마사지! 스트레칭 위주라 시원하고 개운해. 합정 쪽에 잘하는 곳 많음. '안아파?' 싶은데 아프고 나면 확 풀려.</p>
+                </div>
+                <div class="info-card">
+                    <h3>아로마 마사지</h3>
+                    <p>향기에 힐링까지 더함. 여자친구랑 가기 좋고, 불면증 있는 사람한테 추천. 마포구청 근처에 조용한 샵 많아.</p>
+                </div>
+                <div class="info-card">
+                    <h3>건식 마사지 (건마)</h3>
+                    <p>호텔식 마사지? 아니야. 그냥 손으로 꾹꾹 눌러줘서 몸이 가벼워지는 느낌. 상수동 쪽에 숨은 맛집 있다.</p>
+                </div>
+            </div>
+        </section>
 
-        <div class="review-card">
-          <div class="review-header">
-            <span class="reviewer-stars">★★★★★</span>
-            <span class="reviewer-name">가성비의신 브로</span>
-            <span class="review-date">2026.05.02</span>
-          </div>
-          <p class="review-content">광고 앱 눈탱이 요금 시비 걸리기 십상인데, 010-6279-0862 로 미리 통신 연동하니까 단골 추가 혜택 다 적용돼서 지갑 부담 1도 없이 사우나 힐링 개꿀빨음 브로!</p>
-        </div>
-      </div>
-    </main>
-    <footer>
-      <p>&copy; 2026 마포 마사지 안심 가이드. All Rights Reserved.</p>
-      <p style="margin-top:16px;">
-        <a href="index.html">홈</a> | 
-        <a href="about.html">소개</a> | 
-        <a href="blog.html">블로그</a>
-      </p>
-    </footer>
-  </div>
+        <section class="strong-box">
+            <h2 style="border-left-color:#ff0088; margin-top:0;">가격대 &amp; 코스 설명</h2>
+            <p>마사지 링크에서 추천하는 가격 정리:</p>
+            <ul style="font-family:'Courier New', monospace; list-style:none; font-size:1.1rem; padding-left:0;">
+                <li>▪️ 30분 스웨디시 – 보통 4~5만원 (첫 할인 많음)</li>
+                <li>▪️ 60분 타이 – 5~7만원 (골든타임)</li>
+                <li>▪️ 90분 아로마 – 8~10만원 (호캉스 기분)</li>
+                <li>▪️ 120분 풀코스 – 12~15만원 (하루 푹 쉬고 싶을 때)</li>
+                <li>▪️ 야간 할인, 페이백 이벤트도 있으니 전화로 물어봐</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>후기로 보는 진짜 맛집</h2>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>홍대 '힐링샵'</h3>
+                    <p>"관리사분 손길이 예술. 마사지 받고 3일 동안 개운했어. 예약 필수!" - 정*수 형</p>
+                </div>
+                <div class="info-card">
+                    <h3>합정 '타이마사지 24시'</h3>
+                    <p>"밤늦게 가도 친절
 </body>
 </html>
