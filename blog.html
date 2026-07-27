@@ -1,347 +1,74 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="bpaas-design-system" content="brutalist-avantgarde">
-    <meta name="bpaas-design-theme" content="kr-raw-concrete">
-    <title>마포 마사지 링크 블로그 - 스포츠 마사지와 림프 마사지 효과 비교</title>
-    <meta name="description" content="마포구 최고 마사지 업체 링크의 블로그: 스포츠 마사지와 림프 마사지의 과학적 효과, 적응증, 실제 데이터를 기반으로 비교 분석합니다. 전문 테라피스트의 권위 있는 인사이트를 확인하세요.">
-    <meta name="keywords" content="마포 마사지 링크, 마포 마사지 블로그, 스포츠 마사지 효과, 림프 마사지 효과, 마포구 마사지 추천, 마사지 비교">
-    <link rel="canonical" href="https://t3b06-mp-massage-link.vercel.app/blog">
-    <meta property="og:title" content="마포 마사지 링크 블로그 - 스포츠 마사지 vs 림프 마사지">
-    <meta property="og:description" content="데이터로 증명하는 마사지 효과 비교. 마포 마사지 링크의 전문가가 알려드립니다.">
-    <meta property="og:url" content="https://t3b06-mp-massage-link.vercel.app/blog">
-    <meta property="og:type" content="article">
-    <meta property="og:site_name" content="마포 마사지 링크">
-    <meta property="og:locale" content="ko_KR">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="마포 마사지 링크 블로그 - 스포츠 마사지 vs 림프 마사지">
-    <meta name="twitter:description" content="데이터로 증명하는 마사지 효과 비교. 마포 마사지 링크의 전문가가 알려드립니다.">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        /* Brutalist Avant-Garde Design System — 재사용 */
-        :root {
-            --color-bg: #f5f0eb;
-            --color-text: #1a1a1a;
-            --color-accent: #c0392b;
-            --color-accent-dark: #962d22;
-            --color-border: #2c2c2c;
-            --color-card: #ffffff;
-            --font-main: 'Noto Sans KR', system-ui, sans-serif;
-            --font-display: 'Space Grotesk', 'Noto Sans KR', sans-serif;
-            --spacing-unit: 1rem;
-            --border-thick: 4px;
-            --border-thin: 2px;
-            --shadow-brutal: 6px 6px 0 rgba(0,0,0,0.15);
-        }
-
-        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-        html { scroll-behavior: smooth; }
-        body {
-            font-family: var(--font-main);
-            background-color: var(--color-bg);
-            color: var(--color-text);
-            line-height: 1.7;
-            -webkit-font-smoothing: antialiased;
-        }
-
-        /* Hamburger Menu Pattern (brutalist) */
-        .hamburger-menu {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: var(--spacing-unit) 2rem;
-            background: var(--color-card);
-            border-bottom: var(--border-thick) solid var(--color-border);
-            position: relative;
-            z-index: 100;
-        }
-        .hamburger-menu .logo a {
-            font-family: var(--font-display);
-            font-weight: 900;
-            font-size: 1.8rem;
-            color: var(--color-accent);
-            text-decoration: none;
-            text-transform: uppercase;
-            letter-spacing: -0.02em;
-        }
-        .hamburger-menu .nav-links {
-            display: flex;
-            gap: 2rem;
-            list-style: none;
-        }
-        .hamburger-menu .nav-links a {
-            text-decoration: none;
-            color: var(--color-text);
-            font-weight: 700;
-            font-size: 1rem;
-            padding: 0.25rem 0;
-            border-bottom: var(--border-thin) solid transparent;
-            transition: border-color 0.2s;
-        }
-        .hamburger-menu .nav-links a:hover,
-        .hamburger-menu .nav-links a.active {
-            border-bottom-color: var(--color-accent);
-            color: var(--color-accent);
-        }
-        .hamburger-toggle {
-            display: none;
-            background: none;
-            border: none;
-            font-size: 1.8rem;
-            color: var(--color-text);
-            cursor: pointer;
-        }
-
-        /* Responsive 768 pattern */
-        @media (max-width: 768px) {
-            .hamburger-menu {
-                flex-wrap: wrap;
-                padding: var(--spacing-unit);
-            }
-            .hamburger-toggle {
-                display: block;
-            }
-            .hamburger-menu .nav-links {
-                display: none;
-                flex-direction: column;
-                width: 100%;
-                gap: 0.5rem;
-                padding: 1rem 0;
-                border-top: var(--border-thin) solid var(--color-border);
-                margin-top: 0.5rem;
-            }
-            .hamburger-menu .nav-links.open {
-                display: flex;
-            }
-            .hamburger-menu .nav-links a {
-                padding: 0.5rem 0;
-                border-bottom: none;
-            }
-        }
-
-        /* 공통 컴포넌트 */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-        .page-header {
-            padding: 3rem 2rem 1rem;
-            border-bottom: var(--border-thick) solid var(--color-border);
-            margin-bottom: 2rem;
-        }
-        .page-header h1 {
-            font-family: var(--font-display);
-            font-size: 2.5rem;
-            font-weight: 900;
-            text-transform: uppercase;
-            letter-spacing: -0.03em;
-            line-height: 1.1;
-            color: var(--color-text);
-        }
-        .page-header p {
-            font-size: 1.1rem;
-            color: #444;
-            margin-top: 0.5rem;
-            max-width: 700px;
-        }
-
-        .blog-card {
-            background: var(--color-card);
-            border: var(--border-thick) solid var(--color-border);
-            padding: 2rem;
-            margin-bottom: 2rem;
-            box-shadow: var(--shadow-brutal);
-            border-radius: 0;
-        }
-        .blog-card h2 {
-            font-family: var(--font-display);
-            font-size: 1.8rem;
-            font-weight: 700;
-            margin-bottom: 1.5rem;
-            line-height: 1.2;
-        }
-        .blog-card h3 {
-            font-family: var(--font-display);
-            font-size: 1.3rem;
-            font-weight: 700;
-            margin-top: 2rem;
-            margin-bottom: 0.8rem;
-            border-left: var(--border-thick) solid var(--color-accent);
-            padding-left: 0.8rem;
-        }
-        .blog-card p {
-            margin-bottom: 1.2rem;
-            font-size: 1.05rem;
-        }
-        .blog-card ul, .blog-card ol {
-            margin-left: 1.5rem;
-            margin-bottom: 1.2rem;
-        }
-        .blog-card li {
-            margin-bottom: 0.5rem;
-        }
-        .blog-card .highlight-box {
-            background: #f0e6d8;
-            border-left: var(--border-thick) solid var(--color-accent);
-            padding: 1.2rem;
-            margin: 1.5rem 0;
-            font-weight: 700;
-        }
-        .blog-meta {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem 0;
-            border-bottom: 1px solid #ddd;
-            margin-bottom: 1.5rem;
-            font-size: 0.9rem;
-            color: #555;
-        }
-        .btn-cta {
-            display: inline-block;
-            background: var(--color-accent);
-            color: #fff;
-            font-family: var(--font-display);
-            font-weight: 700;
-            padding: 0.8rem 2rem;
-            text-transform: uppercase;
-            text-decoration: none;
-            border: var(--border-thin) solid var(--color-border);
-            box-shadow: var(--shadow-brutal);
-            transition: transform 0.1s, box-shadow 0.1s;
-            cursor: pointer;
-        }
-        .btn-cta:hover {
-            transform: translate(2px, 2px);
-            box-shadow: 4px 4px 0 rgba(0,0,0,0.2);
-        }
-
-        .faq-section {
-            margin-top: 3rem;
-        }
-        .faq-section h2 {
-            font-family: var(--font-display);
-            font-size: 1.8rem;
-            font-weight: 700;
-            margin-bottom: 1.5rem;
-        }
-        .faq-item {
-            border-bottom: var(--border-thin) solid var(--color-border);
-            padding: 1rem 0;
-        }
-        .faq-item summary {
-            font-weight: 700;
-            cursor: pointer;
-            font-size: 1.1rem;
-            padding: 0.5rem 0;
-        }
-        .faq-item summary::-webkit-details-marker {
-            color: var(--color-accent);
-        }
-        .faq-item p {
-            margin-top: 0.5rem;
-            padding-left: 0.5rem;
-        }
-
-        footer {
-            background: var(--color-text);
-            color: #ccc;
-            padding: 3rem 2rem;
-            margin-top: 3rem;
-            border-top: var(--border-thick) solid var(--color-accent);
-        }
-        footer .footer-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 2rem;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        footer h4 {
-            font-family: var(--font-display);
-            color: #fff;
-            margin-bottom: 1rem;
-        }
-        footer a {
-            color: #bbb;
-            text-decoration: none;
-            display: block;
-            margin-bottom: 0.3rem;
-        }
-        footer a:hover { color: #fff; }
-        footer .copyright {
-            text-align: center;
-            margin-top: 2rem;
-            padding-top: 1rem;
-            border-top: 1px solid #444;
-            font-size: 0.9rem;
-        }
-
-        /* 블로그 전용 스타일 (디자인 시스템 내 확장) */
-        .data-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 1.5rem 0;
-            font-size: 0.95rem;
-        }
-        .data-table th, .data-table td {
-            border: var(--border-thin) solid var(--color-border);
-            padding: 0.75rem;
-            text-align: left;
-        }
-        .data-table th {
-            background: var(--color-accent);
-            color: #fff;
-            font-weight: 700;
-        }
-        .data-table tr:nth-child(even) {
-            background: #f0eae3;
-        }
-    </style>
+<meta charset="UTF-8">
+<title>마포 마사지 링크 — 블로그</title>
+<meta name="description" content="마포 마사지 링크는 언제, 어느 시점에 선택해야 최적의 효과를 얻을 수 있는지 직관적으로 안내합니다. 급하게 결정해야 할 때 필요한 체크리스트와 상황별 적합성을 한눈에 파악하세요.">
+<meta name="keywords" content="마포 마사지, 마사지 선택, 급한 결정, 마포 지역 마사지, 마포 마사지 팁">
+<link rel="canonical" href="https://t3b06-mp-massage-link.maphoshirts.com/blog.html">
+<meta property="og:title" content="마포 마사지 링크 — 블로그">
+<meta property="og:description" content="마포 마사지를 빠르게 결정해야 할 때, 시점에 따라 달라지는 선택 기준을 제시합니다.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://t3b06-mp-massage-link.maphoshirts.com/blog.html">
+<meta property="og:image" content="https://t3b06-mp-massage-link.maphoshirts.com/og-image.jpg">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- Hamburger Menu Navigation (재사용) -->
-    <nav class="hamburger-menu" role="navigation" aria-label="메인 네비게이션">
-        <div class="logo"><a href="/">마포 마사지 링크</a></div>
-        <button class="hamburger-toggle" aria-label="메뉴 열기" onclick="document.querySelector('.nav-links').classList.toggle('open')">
-            <i class="fas fa-bars"></i>
-        </button>
-        <ul class="nav-links">
-            <li><a href="/">홈</a></li>
-            <li><a href="/about">소개</a></li>
-            <li><a href="/services">서비스</a></li>
-            <li><a href="/blog" class="active">블로그</a></li>
-            <li><a href="/contact">연락처</a></li>
-        </ul>
-    </nav>
+<!-- Navigation (공통) -->
+<nav class="nav-present">
+  <div class="hamburger-menu" id="menuToggle">
+    <input type="checkbox" />
+    <span></span>
+    <span></span>
+    <span></span>
+    <ul class="responsive-768">
+      <li><a href="/">홈</a></li>
+      <li><a href="/services">서비스</a></li>
+      <li><a href="/blog">블로그</a></li>
+      <li><a href="/contact">연락처</a></li>
+    </ul>
+  </div>
+</nav>
 
-    <!-- 페이지 헤더 -->
-    <header class="page-header">
-        <div class="container" style="padding:0;">
-            <h1>블로그 &middot; 마사지 인사이트</h1>
-            <p>과학적 데이터와 임상 경험을 바탕으로 한 권위 있는 마사지 정보. 마포 마사지 링크의 전문 테라피스트가 전합니다.</p>
-        </div>
-    </header>
+<main class="t-box-3j5m">
 
-    <main class="container" role="main">
+  <section class="q-img-w6tb">
+    <h1>마포 마사지 링크 – 순간 선택이 중요한 이유</h1>
+    <p>당신이 밤길을 가로지르는 순간, 몸은 피로와 스트레스로 가득 차게 된다. 그때 마포의 숨은 마사지 공간을 알지 못한다면, 당신은 더 큰 고통을 안고 살아야 한다. 이 글은 단순히 정보를 나열하는 것이 아니라, 당신이 ‘언제’, ‘어디서’, ‘왜’ 선택해야 하는지에 대한 강력한 기준을 제시한다.</p>
+    <p>우리는 일상 속에서 무심코 지나치는 선택이 얼마나 큰 차이를 만들 수 있는지 직접 체험했다. 이제 그 경험을 바탕으로 당신에게 직접적인 행동 지침을 제공한다. 이 가이드를 무시하고 지나친 결정은 곧 당신의 몸과 정신을 무너뜨릴 것이다.</p>
+  </section>
 
-        <!-- 블로그 글 1편 -->
-        <article class="blog-card" itemscope itemtype="https://schema.org/BlogPosting">
-            <div class="blog-meta">
-                <span itemprop="datePublished" content="2025-03-25">2025년 3월 25일</span>
-                <span>by <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">김태호 테라피스트</span></span> &middot; 마포 마사지 링크 대표</span>
-                <span>조회 1,284</span>
-            </div>
+  <section class="q-img-w6tb">
+    <h2>시점별 선택 가이드 – 언제가 가장 적절한가?</h2>
+    <p><strong>1️⃣ 밤 10시 이후</strong> – 하루의 피로가 최고조에 달하는 시점이다. 이때는 근육이 가장 늘어나고, 깊은 조직 마사지를 통해 회복을 촉진시킬 수 있다. 마포 지역의 24시간 영업점은 이때가 최적이다.</p>
+    <p><strong>2️⃣ 저녁 6시 ~ 8시</strong> – 퇴근 직후, 스트레스와 체력의 균형을 바로 잡을 수 있는 순간이다. 이때는 가벼운 스웨디시나 체형 교정 마사지가 효과적이다. 예약이 급히 필요하면 즉시 체크리스트를 활용하라.</p>
+  </section>
 
-            <h2 itemprop="headline">스포츠 마사지 vs 림프 마사지: 효과, 메커니즘, 선택 기준을 데이터로 분석한다</h2>
+  <section class="q-img-w6tb">
+    <h2>인원별 맞춤 기준 – 혼자 vs. 동행</h2>
+    <p><strong>혼자 이용</strong> – 개인 맞춤형 프로그램이 필요하다. 사전 설문을 통해 근골격계 상태를 파악하고, 맞춤형 압력 조절이 가능한 마시지를 선택하라. 마포에 있는 ‘프라이빗 스페이스’는 혼자서도 편안히 이용할 수 있다.</p>
+    <p><strong>동행 이용</strong> – 파트너와 함께라면, 공간이 넓고 프라이버시가 보장된 곳을 선택해야 한다. 동시에 두 사람 모두에게 만족스러운 프로그램을 제공하는지 확인하고, 사전 상담을 통해 동선과 시간을 조율하라.</p>
+  </section>
 
-            <p itemprop="description">마포구에서 운동 후 회복을 원하는 직장인, 또는 만성 피로와 부종으로 고민하시는 분들께서 가장 자주 묻는 질문이 있습니다: <strong>"스포츠 마사지와 림프 마사지 중 어떤 것이 제게 맞을까요?"</strong> 이 글에서는 2024년 발표된 스포츠 의학 저널(Journal of Sports Medicine)의 메타분석과 국내 임상 데이터를 인용하여 두 기법의 생리학적 차이와 실제 효과를 비교합니다.</p>
+  <section class="q-img-w6tb">
+    <h2>목적별 체크포인트 – 힐링 vs. 회복 vs. 리프레시</h2>
+    <p><strong>힐링</strong> – 심신을 완전히 풀어줄 수 있는 아로마 테라피와 라벤더 향이 가미된 마사지를 선택하라. 진동과 마사지가 결합된 ‘리플렉스’ 프로그램을 활용하면, 정신적 스트레스를 단시간에 낮출 수 있다.</p>
+    <p><strong>회복</strong> – 운동 후 근육통을 완화시키려면, 딥 티슈와 스트레치가 결합된 ‘스포츠 마시지’를 선택한다. 마포의 전문 PT와 협업하는 곳이 최적이다.</p>
+    <p><strong>리프레시</strong> – 일상 속 작은 휴식을 원한다면, 30분 이내의 ‘핸드 프레셔’와 페이셜 마사지를 병행한다. 빠른 회전이 가능한 곳을 선택하면, 시간 낭비 없이 만족을 얻는다.</p>
+  </section>
 
-            <
+  <section class="q-img-w6tb">
+    <h2>FAQ – 자주 묻는 질문</h2>
+    <p><strong>Q: 예약 없이 바로 방문해도 괜찮나요?</strong><br/>A: 대부분의 마포 마사지 샵은 예약제이지만, 깊은 밤 시간대는 ‘와일드카드’ 예약이 가능하다. 하지만 급할 경우, 사전 체크리스트를 활용해 대기 시간을 최소화하라.</p>
+    <p><strong>Q: 비용 대비 효과가 높은 프로그램은?</strong><br/>A: 1시간 기준으로 ‘딥 티슈 + 아로마’ 조합이 가장 효율적이다. 가격을 고민한다면, ‘패키지 할인’ 옵션을 확인하고, 회원제 혜택을 누리는 것이 현명한 선택이다.</p>
+  </section>
+
+</main>
+
+<footer>
+  <p>© 2026 마포 마사지 링크. 모든 권리 보유.</p>
+</footer>
+
 </body>
 </html>
