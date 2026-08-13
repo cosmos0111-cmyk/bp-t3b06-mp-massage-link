@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>글 목록 (1/2) · t3b06-mp-massage-link</title>
+  <meta name="description" content="t3b06-mp-massage-link에 올라온 글 목록입니다.">
+  <link rel="canonical" href="https://t3b06-mp-massage-link.maphoshirts.com/posts.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Noto+Serif+KR&display=swap');
+        :root {
+            --bg: #f9f8f6;
+            --surface: #ffffff;
+            --text-primary: #1a1a1a;
+            --text-secondary: #4a4a4a;
+            --border: #e0dcd5;
+            --accent: #7a6652;
+            --accent-light: #f0ebe3;
+            --spacing-xs: 8px;
+            --spacing-sm: 16px;
+            --spacing-md: 24px;
+            --spacing-lg: 40px;
+            --spacing-xl: 56px;
+            --radius: 4px;
+            --font-mono: 'IBM Plex Mono', monospace;
+            --font-serif: 'Noto Serif KR', serif;
+        }
+        html, body {
+            margin: 0;
+            padding: 0;
+            background: var(--bg);
+            color: var(--text);
+            font-family: var(--font-serif);
+            line-height: 1.7;
+            font-size: 16px;
+        }
+        h1, h2, h3 {
+            font-family: var(--font-mono);
+            font-weight: 500;
+            letter-spacing: -0.02em;
+            color: var(--text);
+            margin: 0;
+        }
+        h1 { font-size: 2rem; }
+        h2 { font-size: 1.4rem; margin-bottom: var(--spacing-sm); }
+        h3 { font-size: 1.1rem; margin-bottom: var(--spacing-xs); }
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s;
+        }
+        a:hover { border-bottom-color: var(--accent); }
+        header, nav, main, section, footer {
+            box-sizing: border-box;
+        }
+        header {
+            background: var(--surface);
+            border-bottom: 1px solid var(--border);
+            padding: var(--spacing-md) var(--spacing-lg);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .logo-area {
+            font-family: var(--font-mono);
+            font-size: 1.1rem;
+            font-weight: 500;
+            letter-spacing: 0.04em;
+        }
+        nav {
+            display: flex;
+            gap: var(--spacing-md);
+            flex-wrap: wrap;
+        }
+        nav a {
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            border-bottom: none;
+            padding: 4px 0;
+        }
+        nav a.active {
+            border-bottom: 2px solid var(--accent);
+            font-weight: 600;
+        }
+        main {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: var(--spacing-xl) var(--spacing-lg);
+        }
+        section {
+            margin-bottom: var(--spacing-xl);
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: var(--spacing-lg);
+        }
+        footer {
+            background: var(--surface);
+            border-top: 1px solid var(--border);
+            padding: var(--spacing-lg);
+            text-align: center;
+            font-family: var(--font-mono);
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            letter-spacing: 0.04em;
+        }
+        .q-grid-ugk6 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: var(--spacing-md);
+            margin-top: var(--spacing-md);
+        }
+        .k-item-u3nd {
+            background: var(--accent-light);
+            padding: var(--spacing-md);
+            border-radius: var(--radius);
+            border-left: 4px solid var(--accent);
+        }
+        .k-item-u3nd h3 {
+            margin-top: 0;
+            font-size: 1rem;
+        }
+        .x-txt-97jr {
+            font-family: var(--font-serif);
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin: var(--spacing-sm) 0;
+        }
+        .x-txt-97jr a {
+            font-family: var(--font-mono);
+            font-size: 0.9rem;
+        }
+        .info-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            border-bottom: 1px dashed var(--border);
+            padding: var(--spacing-sm) 0;
+            font-size: 0.95rem;
+        }
+        .info-label {
+            font-family: var(--font-mono);
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        .info-value {
+            font-weight: 500;
+            text-align: right;
+        }
+        .highlight-badge {
+            display: inline-block;
+            background: var(--accent-light);
+            color: var(--accent);
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            padding: 4px 10px;
+            border-radius: 20px;
+            letter-spacing: 0.04em;
+            margin-right: 6px;
+        }
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: var(--spacing-sm);
+            }
+            nav {
+                gap: var(--spacing-sm);
+            }
+            main {
+                padding: var(--spacing-lg) var(--spacing-sm);
+            }
+            section {
+                padding: var(--spacing-md);
+            }
+            .info-row {
+                flex-direction: column;
+                gap: 4px;
+            }
+            .info-value {
+                text-align: left;
+            }
+        }
+    </style>
+  <meta property="og:title" content="글 목록 (1/2) · t3b06-mp-massage-link">
+  <meta property="og:description" content="t3b06-mp-massage-link에 올라온 글 목록입니다.">
+  <meta property="og:url" content="https://t3b06-mp-massage-link.maphoshirts.com/posts.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+</head>
+<body>
+  <div class="container">
+    <header>
+        <div class="logo-area">MP MASSAGE LINK</div>
+        <nav>
+            <a href="#">홈</a>
+            <a href="#" class="active">정보</a>
+            <a href="#">비교</a>
+            <a href="#">문의</a>
+            <a href="#">블로그</a>
+        </nav>
+    </header>
+    <main>
+      <h1>글 목록</h1>
+      <p>전체 39개 · 1/2 페이지</p>
+      <ul class="post-list">
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260705-1034.html">마포에서 누리는 일상 속의 짧은 휴식과 마사지 선택 가이드</a>
+        <p class="post-item__summary">현대인들은 업무와 일상에서 발생하는 긴장으로 인해 신체 전반의 피로를 자주 호소하곤 합니다. 이러한 피로를 해소하기 위해 마포 지역을 찾는 이들이 늘어나고 있으며 그에 따라 관련 정보에 대한 수요도</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260705-398.html">마포에서 피로를 푸는 나만의 휴식 시간 활용법</a>
+        <p class="post-item__summary">일상 속에서 쌓인 근육의 긴장을 해소하기 위해 마사지를 고려하는 분들이 많습니다. 특히 마포 지역은 바쁜 업무와 일상을 보내는 분들이 밀집한 곳으로, 몸의 피로도를 낮추기 위한 다양한 관리 시설이 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260706-0449.html">마포 마사지 링크로 찾는 힐링 공간</a>
+        <p class="post-item__summary">마포 지역은 다양한 마사지 업소가 밀집된 곳으로 유명하다. 홍대입구, 합정, 상수 등 세부 위치에 따라 분위기와 서비스 스타일이 조금씩 다르게 나타난다. 자신에게 맞는 공간을 고르려면 여러 정보를 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260706-0450.html">마포 마사지 링크, 휴식과 전문성의 만남</a>
+        <p class="post-item__summary">마포 지역에서 찾아볼 수 있는 마사지 링크는 편안함과 전문성 두 마리 토끼를 동시에 잡는다. 이 곳은 정리된 바닥과 온화한 조명으로 방문객을 맞이해, 스트레스 가득한 일상을 잠시 내려놓을 수 있게 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260706-0451.html">마포 마사지 링크를 제대로 활용하는 방법</a>
+        <p class="post-item__summary">마포에서 마사지 업소를 찾을 때 단순히 위치나 가격만 보고 결정하기는 어렵다. 트리트먼트 종류와 분위기, 제공되는 서비스의 폭을 미리 파악하는 것이 중요하다. 이럴 때 도움이 되는 것이 바로 관련 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260706-0452.html">마포 마사지 링크로 찾는 완벽한 힐링 체험</a>
+        <p class="post-item__summary">마포 지역은 일과 생활의 긴장 속에서 휴식이 필요한 사람들에게 가장 가까운 힐링 스폿입니다. 여기 위치한 마사지 전문점들은 기술과 분위기를 겸비해 체력 회복은 물론 마인드 리프레시까지 시켜줍니다. </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260706-0453.html">마포 마사지 링크로 찾는 지역 힐링 루틴</a>
+        <p class="post-item__summary">마포 지역에는 다양한 마사지 업체들이 자리잡고 있어 선택의 폭이 상당히 넓다. 바쁜 일상 속에서 몸과 마음의 피로를 풀어줄 공간을 찾는 사람들이 부쩍 늘고 있는 추세다. 접근성이 좋은 마포는 직장인</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260706-0454.html">마포 마사지 링크, 도시 속 평온한 휴식의 시작</a>
+        <p class="post-item__summary">마포 산책의 끝에 찾아오는 편안한 휴식이 필요한가요? '마포 마사지 링크'는 지역 특화된 시설로 근육 이완과 스트레스 완화에 초점을 맞추고 있습니다. 도시의 소음 속에서도 그늘진 공간에서 평온한 시</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260706-0455.html">마포에서 마사지 링크 찾는 분들이 알아두면 좋은 점</a>
+        <p class="post-item__summary">마포 지역에서 마사지를 받고 싶을 때 어디서 정보를 찾을지 고민하는 분들이 많습니다. 검색만 해도 다양한 업소가 나오지만 실제 후기나 가격은 제각각이라 선택이 쉽지 않습니다.</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260706-0456.html">바쁜 일상 속 마포 마사지 링크에서 찾은 힐링</a>
+        <p class="post-item__summary">마포에서 찾은 마사지 전문 장소를 소개합니다. 평소 바쁜 일상 속에서도 몸과 마음을 회복할 수 있는 공간이 필요하죠. 이곳은 조용한 분위기와 전문 마사지사가 인상적입니다.</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260706-0457.html">마포 마사지 링크 전략, 도메인 건강에서 답을 찾다</a>
+        <p class="post-item__summary">마포 지역에서 마사지 업계의 온라인 입지를 구축하려면 단순히 사이트 하나만으로는 부족하다. 경쟁이 치열한 만큼 방문자와 검색 엔진 모두에게 신뢰를 주는 연결 구조가 필요하다. 바로 여기서 마포 마사</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260706-0458.html">마포 마사지 링크 완전 정리: 편안함과 편리성 동시에</a>
+        <p class="post-item__summary">마포 지역에는 다양한 마사지 전문점들이 즐비합니다. 인테리어는 차분하면서도 모던한 분위기로 꾸며졌습니다. 최근에는 온라인에서 마포 마사지 링크를 활용해 간편하게 예약할 수 있는 플랫폼이 인기를 끌고</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260706-0459.html">마포 마사지 링크로 찾은 내 주변 힐링 스팟</a>
+        <p class="post-item__summary">서울 마포에는 홍대, 합정, 상수 등 지역별로 분위기가 다른 마사지 샵이 많다. 초행길에 어디를 갈지 막막하다면 마포 마사지 링크를 통해 주변 샵 정보를 모아보는 것이 편리하다. 위치와 가격, 후기</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260706-0460.html">마포 마사지 링크로 찾아낸 편안한 공간</a>
+        <p class="post-item__summary">마포 지역에서 찾아낸 마포 마사지 링크는 어느 가게와 같은 이름이 아니라, 주변의 평을 한 눈에 볼 수 있는 디지털 지표이다. 이 지점을 방문하면 깔끔한 안내와 편안한 분위기가 친절하게 맞이해 준다</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260706-0461.html">마포 마사지 링크와 효율적인 정보 탐색 방법</a>
+        <p class="post-item__summary">마포 지역에서 마사지 서비스를 찾는 사람들이 늘어나면서 관련 정보를 효율적으로 모으는 방법도 다양해지고 있다. 기존에는 단순 포털 검색에 의존하는 경우가 많았지만, 최근에는 마포 마사지 링크를 중심</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260706-0462.html">마포 마사지 링크로 편리하게 찾는 스파와 마사지</a>
+        <p class="post-item__summary">마포 지역의 다양한 마사지 업체는 커피숍 근처나 편리한 교통지점에 위치해 있다. 이들이 제공하는 스파와 마사지 서비스는 직장인과 관광객 모두에게 편리함을 제공한다.</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260706-0463.html">마포 마사지 링크로 찾는 힐링 공간, 현명한 선택을 위한 팁</a>
+        <p class="post-item__summary">직장인들의 피로가 쌓이는 요즘, 마포 지역에서 마사지를 받을 수 있는 곳을 찾는 분들이 늘고 있습니다. 출퇴근 길에 지친 몸과 마음을 풀어줄 마사지샵을 고를 때는 위치와 가격만 볼 것이 아니라 여러</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260706-0464.html">마포 마사지 링크, 새롭게 발견한 힐링 공간</a>
+        <p class="post-item__summary">마포에서 찾은 힐링 스팟인 마포 마사지 링크는 손쉬운 접근성과 편안한 분위기로 이미 많은 사람들의 입소문이 돌고 있다. 조용한 내부 인테리어와 부드러운 조명은 일상에서 벗어나 몸과 마음을 재충전하는</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0119.html">마포 마사지 링크 활용한 회식 기획과 마포 단체 회식용 대형 룸 노래방 가격 정보</a>
+        <p class="post-item__summary">많은 분이 마포 마사지 링크를 통해 정보를 찾다가 검증되지 않은 매체에 낚여 귀한 시간을 허비하곤 합니다. 특히 단체 회식을 준비할 때는 정보의 정확성이 떨어지면 모임 전체의 흐름이 깨지기 마련입니</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0155.html">마포 마사지 링크 찾아 합정 노래방 추천정보 확인</a>
+        <p class="post-item__summary">쾌적한 환경, 최신식 음향 장비, 친절한 서비스는 합정 노래방을 선택할 때 충족되어야 할 필수 조건입니다. 마포 마사지 링크를 타고 들어온 분들이 궁금해하는 합정 노래방 추천정보의 핵심은 인원 구성</p>
+      </li>
+      </ul>
+    <nav class="pager">
+      <span class="pager__current">1</span>
+      <a class="pager__link" href="posts-2.html">2</a>
+    </nav>
+    </main>
+  </div>
+</body>
+</html>
